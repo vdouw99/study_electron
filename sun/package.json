@@ -1,0 +1,38 @@
+{
+  "name": "kkdg",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "grunt": "^1.0.1",
+    "grunt-electron-installer": "^2.1.0"
+  },
+  "build": {
+    "appId": "com.kkdg.kkdg",
+    "productName": "KK点歌",
+    "win": {
+      "icon": "kkdg"
+    },
+    "mac": {
+      "icon": "kkdg"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build -mw --x64 --ia32"
+  }
+}
