@@ -11,13 +11,13 @@ const url = require('url')
 let mainWindow
 
 function createWindow () {
-    console.log('create windows...')
+  console.log('create windows...')
   // Create the browser window.
   mainWindow = new BrowserWindow({
 //                                    width: 800,
 //                                    height: 600,
-                                    nodeIntegration: true
-                                 })
+    nodeIntegration: true
+  })
 
   // and load the index.html of the app.
 //  mainWindow.loadURL(url.format({
@@ -26,13 +26,13 @@ function createWindow () {
 //    slashes: true
 //  }))
 //    mainWindow.maximize();
-    mainWindow.loadURL('http://www.vdouw.com')
+  mainWindow.loadURL('http://www.vdouw.com')
 //    mainWindow.loadURL('http://www.baidu.com')
 
   // Open the DevTools.
 //   mainWindow.webContents.openDevTools()
 
-   mainWindow.on('close', function() {
+  mainWindow.on('close', function() {
     console.log('mainWindow close111...')
     mainWindow.destroy()
 //    mainWindow.hide()
@@ -41,7 +41,7 @@ function createWindow () {
 //    mainWindow = null
 //    app.quit()
     console.log('mainWindow close222...')
-   })
+  })
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -62,7 +62,7 @@ app.on('ready', createWindow)
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
 
-   console.log('close...')
+  console.log('close...')
   // On OS X it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
   if (process.platform !== 'darwin') {
@@ -71,7 +71,7 @@ app.on('window-all-closed', function () {
 })
 
 app.on('activate', function () {
-    console.log('activate...')
+  console.log('activate...')
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (mainWindow === null) {
