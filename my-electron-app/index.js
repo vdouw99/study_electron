@@ -11,7 +11,7 @@ function createWindow () {
 
   // mainWindow.loadFile('index.html')
   //mainWindow.loadFile('http://www.vdouw.com')
-  mainWindow.loadURL('http://system.tuwen789.com')
+  mainWindow.loadURL('http://www.vdouw.com')
 
   // mainWindow.webContents.openDevTools()
 
